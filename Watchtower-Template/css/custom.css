@@ -8,14 +8,37 @@ p {
   font-weight: 200; }
 
 p.lead-in {
-  font-size: 1.83em; }
+  font-size: 1.83em;
+  font-size: calc(2vw + 2vh + 1vmin); }
+
+/* MENU */
+.brand {
+  width: 100px;
+  height: 63px;
+  background-image: url(../images/Room-To-Think-Logo_white_200x125.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  float: left;
+  margin: 15px; }
+
+#main-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; }
+
+#main-menu a, #main-menu a:hover, #main-menu a:hover {
+  color: #fff;
+  background-color: transparent; }
+
+#main-menu .nav .menu {
+  float: left; }
 
 /* HOMEPAGE */
 .big-wrapper {
   height: 100%;
   width: 100%;
-  height: 100vh;
-  width: 100vw;
+  height: 60vh;
   background-size: auto;
   background-size: cover;
   background-position: 50% 50%;
@@ -26,8 +49,15 @@ p.lead-in {
   height: 100%; }
 
 .big-wrapper > .container p.lead-in {
-  color: #fff; }
+  color: #fff;
+  text-align: center; }
 
+@media (min-device-width: 768px) {
+  .big-wrapper {
+    height: 80vh; }
+
+  .big-wrapper > .container p.lead-in {
+    text-align: left; } }
 /* USEFUL */
 .middle {
   position: relative;

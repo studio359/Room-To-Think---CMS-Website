@@ -11,6 +11,11 @@ defined('_JEXEC') or die;
 
 // Note. It is important to remove spaces between elements.
 ?>
+<nav id="main-menu">
+<div class="container">
+  <img class="brand" />
+
+
 <?php // The menu class is deprecated. Use nav instead. ?>
 <ul class="nav menu<?php echo $class_sfx;?>"<?php
 	$tag = '';
@@ -103,3 +108,5 @@ foreach ($list as $i => &$item)
 	}
 }
 ?></ul>
+</div>
+  </nav>
