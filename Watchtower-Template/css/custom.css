@@ -1,3 +1,15 @@
+/* FONTS */
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200italic,300,300italic,600,700,900);
+div, p, a, h1, h2, h3, h4, h5, h6, li {
+  font-family: 'Source Sans Pro', Arial, sans-serif; }
+
+/* FONT STYLES */
+p {
+  font-weight: 200; }
+
+p.lead-in {
+  font-size: 1.83em; }
+
 /* HOMEPAGE */
 .big-wrapper {
   height: 100%;
@@ -9,5 +21,17 @@
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-color: #ccc; }
+
+.big-wrapper > .container {
+  height: 100%; }
+
+.big-wrapper > .container p.lead-in {
+  color: #fff; }
+
+/* USEFUL */
+.middle {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); }
 
 /*# sourceMappingURL=custom.css.map */

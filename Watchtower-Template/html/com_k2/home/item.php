@@ -12,27 +12,23 @@ defined('_JEXEC') or die;
 
 ?>
 <?php if($this->item->params->get('itemImage') && !empty($this->item->image)): ?>
-<section class="big-wrapper" style="background-image:url(<?php echo $this->item->imageLarge; ?>);">
+<section class="big-wrapper" style="background-image:url(<?php echo $this->item->imageXLarge; ?>);">
 <?php else: ?>
 <section class="big-wrapper">
 <?php endif; ?>
   <section class="container">
-    <div class="row">
+    <div class="row middle">
       <div class="col-md-12">
         <?php if(!empty($this->item->fulltext)): ?>
         <?php if($this->item->params->get('itemIntroText')): ?>
           <p class="lead-in"><?php echo $this->item->introtext; ?></p>
         <?php endif; ?>
         <?php if($this->item->params->get('itemFullText')): ?>
-          <p><?php echo $this->item->fulltext; ?></p>
+          <p class="lead-in"><?php echo $this->item->fulltext; ?></p>
         <?php endif; ?>
         <?php else: ?>
           <p class="lead-in"><?php echo $this->item->introtext; ?></p>
         <?php endif; ?>
-
-        <?php echo $this->item->event->AfterDisplayContent; ?>
-
-        <?php echo $this->item->event->K2AfterDisplayContent; ?>
         </div>
     </div>
   </section>
