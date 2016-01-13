@@ -1,0 +1,13 @@
+/* HOMEPAGE */
+.big-wrapper {
+  height: 100%;
+  width: 100%;
+  height: 100vh;
+  width: 100vw;
+  background-size: auto;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-color: #ccc; }
+
+/*# sourceMappingURL=custom.css.map */
