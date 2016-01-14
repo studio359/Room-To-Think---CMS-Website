@@ -11,6 +11,11 @@ p.lead-in {
   font-size: 1.83em;
   font-size: calc(2vw + 2vh + 1vmin); }
 
+/* IMAGES */
+img {
+  width: 100%;
+  height: auto; }
+
 /* MENU */
 .brand {
   width: 100px;
