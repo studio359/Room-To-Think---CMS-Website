@@ -54,7 +54,7 @@ p.lead-in {
 
 @media (min-device-width: 768px) {
   .big-wrapper {
-    height: 80vh; }
+    height: 90vh; }
 
   .big-wrapper > .container p.lead-in {
     text-align: left; } }

@@ -13,7 +13,7 @@ defined('_JEXEC') or die;
 ?>
 <nav id="main-menu">
 <div class="container">
-  <img class="brand" />
+  <a href="/"><img class="brand" /></a>
 
 
 <?php // The menu class is deprecated. Use nav instead. ?>
