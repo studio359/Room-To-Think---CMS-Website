@@ -12,7 +12,7 @@ defined('_JEXEC') or die;
 
 ?>
 <?php if($this->item->params->get('itemImage') && !empty($this->item->image)): ?>
-<section class="big-wrapper" style="background-image:url(<?php echo $this->item->imageXLarge; ?>);">
+<section id="homepage" class="big-wrapper" style="background-image:url(<?php echo $this->item->imageXLarge; ?>);">
 <?php else: ?>
 <section class="big-wrapper">
 <?php endif; ?>

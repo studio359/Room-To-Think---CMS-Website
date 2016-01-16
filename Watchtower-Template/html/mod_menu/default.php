@@ -11,21 +11,30 @@ defined('_JEXEC') or die;
 
 // Note. It is important to remove spaces between elements.
 ?>
-<nav id="main-menu">
-<div class="container">
-  <a href="/"><img class="brand" /></a>
 
+    <!-- Static navbar -->
+    <nav  id="main-nav" class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img class="brand" src="images/Room-To-Think-Logo_white_200x125.png"/></a>
+        </div>
 
-<?php // The menu class is deprecated. Use nav instead. ?>
-<ul class="nav menu<?php echo $class_sfx;?>"<?php
-	$tag = '';
-
-	if ($params->get('tag_id') != null)
-	{
-		$tag = $params->get('tag_id') . '';
-		echo ' id="' . $tag . '"';
-	}
-?>>
+      
+      
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav<?php echo $class_sfx;?>" <?php $tag = '';
+if ($params->get('tag_id') != null)
+{
+  $tag = $params->get('tag_id') . '';
+  echo ' id="' . $tag . '"';
+}
+              ?>>
 <?php
 foreach ($list as $i => &$item)
 {
@@ -66,7 +75,7 @@ foreach ($list as $i => &$item)
 
 	if ($item->parent)
 	{
-		$class .= ' parent';
+		$class .= ' dropdown';
 	}
 
 	if (!empty($class))
@@ -93,7 +102,7 @@ foreach ($list as $i => &$item)
 	// The next item is deeper.
 	if ($item->deeper)
 	{
-		echo '<ul class="nav-child unstyled small">';
+		echo '<ul class="dropdown-menu">';
 	}
 	elseif ($item->shallower)
 	{
@@ -108,5 +117,6 @@ foreach ($list as $i => &$item)
 	}
 }
 ?></ul>
-</div>
-  </nav>
+        </div>
+      </div>
+    </nav>
